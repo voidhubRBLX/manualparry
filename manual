@@ -12,7 +12,7 @@ if game.PlaceId == 13772394625 then
   frame.Parent = gui
   
   local button = Instance.new("TextButton")
-  button.Text = "Ligar"
+  button.Text = "Ensble"
   button.Size = UDim2.new(1, -10, 1, -10)
   button.Position = UDim2.new(0, 10, 0, 10)
   button.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -27,7 +27,7 @@ if game.PlaceId == 13772394625 then
   
   local function toggle()
     activated = not activated
-    button.Text = activated and "Desligar" or "Ligar"
+    button.Text = activated and "Disable" or "Enable"
     while activated do
       local args = {
         [1] = 1.5,
